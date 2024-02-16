@@ -1,0 +1,64 @@
+@import '../scss/variables.scss';
+
+* {
+    font-family: 'Rubik', sans-serif;  
+}
+body {
+  
+  a {
+    text-decoration: none;
+  }
+  &.hide {
+    overflow-y: hidden !important;
+  }
+}
+
+input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+}
+.row {
+  margin:0 !important;
+  padding: 0 !important
+}
+
+.gap-6 {
+  gap : 6px
+}
+.gap-15 {
+  gap : 15px
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color_232f3e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1450px;
+  }
+}
+
+html{
+  scroll-behavior: auto !important;
+}
+
+

@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+
+
+.controlled {
+    svg {
+        font-size: 20px;
+        cursor: pointer;
+        &:nth-of-type(1) {
+            color:red
+        }
+    }
+
+}    
+.completed {
+    top: 15px;
+    right: 15px;
+    padding: 4px;
+    border-radius: 5px;
+    color:white;
+    font-size: 13px;
+    text-transform: capitalize;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

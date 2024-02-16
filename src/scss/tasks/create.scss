@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+
+.MuiModal-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form {
+        width:40%;
+        background-color: #fff;
+        padding: 20px;
+        > .input:not(:last-of-type) {
+            margin-bottom:20px;
+        }
+        .input {
+            input , textarea {
+                width:100%;
+                background:$color_f5f5f7;
+                padding:10px;;
+                border:0;
+                outline: 0;
+                font-size: 15px;
+                border-radius: 3px;
+                &::-webkit-input-placeholder {
+                    text-transform: capitalize;
+                }
+            }
+            textarea {
+                height: 50px;
+            }
+        }
+        .buttons  {
+            button , a {
+                text-align: center;
+                border:0;
+                padding: 7px 35px;
+                border-radius: 25px;
+                font-size: 15px;
+                color: white;
+                display: inline-block;
+                background: $color_232f3e;
+                transition: 0.5s;
+                text-transform: capitalize;
+                margin:10px 0 0;
+                font-weight: 400;
+            }
+            a {
+                background-color: $color_febd69;
+                color:$color_232f3e
+            }
+        }
+        > a {
+            color:$color_777777;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+    }
+}
